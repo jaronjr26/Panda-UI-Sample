@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="siteName">
+            <img class="img" src="pandaaa.png" alt="panda"/>
+            <p>Panda</p>
+        </div>
+        <a href="#" class="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            
+        </a>
+        <div class="info">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form">
+        <div class="login">
+             <div class="Sign-in">
+                <h2>Sign In</h2>
+            </div>
+            <form action="" class="log">
+                <input type="email" class="email" placeholder="email">
+                <input type="password" class="password" placeholder="Password">
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        
+        var toggle = document.querySelector('.toggle');
+        var info = document.querySelector('.info');
+        var email = document.querySelector('.email');
+        var password = document.querySelector('.password');
+        var submit = document.querySelector('.submit');
+
+        toggle.addEventListener('click', function(){
+            info.classList.toggle('active');
+        })
+
+    </script>
+</body>
+</html>
